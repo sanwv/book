@@ -1,0 +1,280 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>服务器配置 | sanwv</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.5.2">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../git/png.html" />
+    
+    
+    <link rel="prev" href="../git/index.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book" data-level="5.1" data-chapter-title="服务器配置" data-filepath="git/git-server.md" data-basepath=".." data-revision="Sun Nov 15 2015 16:41:31 GMT+0800 (CST)">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        简介
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="command.html">
+            
+                
+                    <a href="../command.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        常用命令
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="mysql/index.html">
+            
+                
+                    <a href="../mysql/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        Mysql
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="android/index.html">
+            
+                
+                    <a href="../android/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        Android
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="vim/index.html">
+            
+                
+                    <a href="../vim/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        Vim
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="git/index.html">
+            
+                
+                    <a href="../git/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        Git
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="5.1" data-path="git/git-server.html">
+            
+                
+                    <a href="../git/git-server.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                        服务器配置
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="git/png.html">
+            
+                
+                    <a href="../git/png.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                        命令图
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >sanwv</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="&#x670D;&#x52A1;&#x5668;&#x914D;&#x7F6E;">&#x670D;&#x52A1;&#x5668;&#x914D;&#x7F6E;</h1>
+<h3 id="&#x6DFB;&#x52A0;git&#x7528;&#x6237;&#x53EA;&#x53EF;&#x7528;gitshell">&#x6DFB;&#x52A0;git&#x7528;&#x6237;,&#x53EA;&#x53EF;&#x7528;git-shell</h3>
+<pre><code>useradd -d /git -s /usr/bin/git-shell git
+</code></pre><h3 id="&#x521B;&#x5EFA;&#x5BB6;&#x76EE;&#x5F55;&#x548C;ssh&#x76EE;&#x5F55;">&#x521B;&#x5EFA;&#x5BB6;&#x76EE;&#x5F55;&#x548C;.ssh&#x76EE;&#x5F55;</h3>
+<pre><code>mkdir -p /git/.ssh
+</code></pre><h3 id="&#x628A;&#x5141;&#x8BB8;&#x64CD;&#x4F5C;&#x7684;&#x7528;&#x6237;&#x7684;&#x516C;&#x94A5;&#x4FDD;&#x5B58;&#x5230;authorizedkeys&#x4E2D;">&#x628A;&#x5141;&#x8BB8;&#x64CD;&#x4F5C;&#x7684;&#x7528;&#x6237;&#x7684;&#x516C;&#x94A5;&#x4FDD;&#x5B58;&#x5230;authorized_keys&#x4E2D;</h3>
+<pre><code>touch /git/.ssh/authorized_keys
+chmod 0600 /git/.ssh/authorized_keys
+</code></pre><h3 id="&#x7528;&#x6237;">&#x7528;&#x6237;</h3>
+<pre><code>chown -R git:git /git
+</code></pre>
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../git/index.html" class="navigation navigation-prev " aria-label="Previous page: Git"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../git/png.html" class="navigation navigation-next " aria-label="Next page: 命令图"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"highlight":{},"search":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
