@@ -1,0 +1,9 @@
+{
+  "name": "admin-sanwv",
+  "version": "2.3.3",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "react": "^15.0.1"
+  }
+}
